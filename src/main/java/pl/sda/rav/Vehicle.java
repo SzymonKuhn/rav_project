@@ -1,6 +1,6 @@
 package pl.sda.rav;
 
-public class Vehicle {
+public abstract class Vehicle {
     private int vin;
     private String name;
     private String productionDate;
