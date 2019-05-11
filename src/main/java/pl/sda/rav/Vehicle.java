@@ -1,11 +1,14 @@
 package pl.sda.rav;
 
-public abstract class Vehicle {
+public abstract class Vehicle implements Comparable <Vehicle> {
     private int vin;
     private String name;
-    private String productionDate;
+    private int productionDate;
+    public int compareTo(Vehicle o) {
+        return 0;
+    }
 
-    public Vehicle(int vin, String name, String productionDate) {
+    public Vehicle(int vin, String name, int productionDate) {
         this.vin = vin;
         this.name = name;
         this.productionDate = productionDate;
@@ -19,7 +22,7 @@ public abstract class Vehicle {
         return name;
     }
 
-    public String getProductionDate() {
+    public int getProductionDate() {
         return productionDate;
     }
 }
