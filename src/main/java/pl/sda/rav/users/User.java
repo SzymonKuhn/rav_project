@@ -1,4 +1,4 @@
-package pl.sda.rav;
+package pl.sda.rav.users;
 
 public abstract class User {
     private String login;
@@ -22,5 +22,16 @@ public abstract class User {
     public UserType getUserType() {
         return userType;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                ", userType=" + userType +
+                '}';
+    }
+
+
 }
 

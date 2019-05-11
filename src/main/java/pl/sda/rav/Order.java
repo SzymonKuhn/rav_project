@@ -1,5 +1,7 @@
 package pl.sda.rav;
 
+import pl.sda.rav.users.User;
+
 import java.time.LocalTime;
 
 public class Order {
