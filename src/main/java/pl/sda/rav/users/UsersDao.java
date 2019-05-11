@@ -22,6 +22,7 @@ import org.slf4j.Logger;
 
 public class UsersDao {
     private final Logger logger = LoggerFactory.getLogger(UsersDao.class);
+
     private Set<User> users = new HashSet<>();
 
     public Set<User> getUsers() {
